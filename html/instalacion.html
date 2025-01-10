@@ -1,0 +1,140 @@
+<section id="instalacion" class="mb-5">
+  <!-- Encabezado principal -->
+  <div class="d-flex align-items-center mb-4">
+    <div class="feature-icon bg-primary bg-opacity-10 p-3 rounded-3 me-3">
+      <i class="bi bi-download text-primary fs-4"></i>
+    </div>
+    <h1 class="display-4 fw-bold mb-0">Métodos de Instalación</h1>
+  </div>
+
+  <!-- Descripción principal -->
+  <div class="card border-0 shadow-sm mb-4">
+    <div class="card-body p-4">
+      <p class="lead text-secondary">
+        Bootstrap 5 ofrece múltiples formas de instalación para adaptarse a
+        diferentes flujos de trabajo. Elige el método que mejor se ajuste a las
+        necesidades de tu proyecto.
+      </p>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <!-- CDN -->
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center mb-4">
+            <div
+              class="feature-icon bg-primary bg-opacity-10 p-3 rounded-3 me-3"
+            >
+              <i class="bi bi-cloud-download text-primary fs-4"></i>
+            </div>
+            <div>
+              <h3 class="h4 mb-1">CDN</h3>
+              <p class="text-secondary mb-0">La forma más rápida de empezar</p>
+            </div>
+          </div>
+
+          <p class="text-secondary mb-4">
+            Incluye Bootstrap directamente en tu HTML usando el CDN. No
+            necesitas descargar ni instalar nada.
+          </p>
+
+          <div class="code-example bg-dark rounded-3 p-3 mb-3">
+            <pre class="mb-0"><code class="language-html">&lt;!-- CSS --&gt;
+&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+
+&lt;!-- JavaScript --&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;</code></pre>
+          </div>
+
+          <div
+            class="alert alert-info d-flex align-items-center mb-0"
+            role="alert"
+          >
+            <i class="bi bi-info-circle-fill me-2"></i>
+            <div>
+              El CDN proporciona mejor velocidad de carga y aprovecha el caché
+              del navegador.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NPM -->
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center mb-4">
+            <div
+              class="feature-icon bg-success bg-opacity-10 p-3 rounded-3 me-3"
+            >
+              <i class="bi bi-box text-success fs-4"></i>
+            </div>
+            <div>
+              <h3 class="h4 mb-1">npm</h3>
+              <p class="text-secondary mb-0">
+                Instalación mediante gestor de paquetes
+              </p>
+            </div>
+          </div>
+
+          <p class="text-secondary mb-4">
+            Ideal para proyectos que utilizan npm como gestor de paquetes y
+            bundlers modernos.
+          </p>
+
+          <div class="code-example bg-dark rounded-3 p-3 mb-3">
+            <pre
+              class="mb-0"
+            ><code class="language-bash">npm install bootstrap@5.3.0</code></pre>
+          </div>
+
+          <p class="text-secondary mb-3">Importa en tu archivo JavaScript:</p>
+
+          <div class="code-example bg-dark rounded-3 p-3 mb-3">
+            <pre
+              class="mb-0"
+            ><code class="language-javascript">import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';</code></pre>
+          </div>
+
+          <div
+            class="alert alert-success d-flex align-items-center mb-0"
+            role="alert"
+          >
+            <i class="bi bi-check-circle-fill me-2"></i>
+            <div>
+              Perfecto para proyectos que usan bundlers como Webpack o Vite.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Consejo Pro -->
+    <div class="col-12">
+      <div class="card border-0 shadow-sm bg-primary bg-opacity-10">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center mb-3">
+            <div class="feature-icon bg-primary p-2 rounded-3 me-3">
+              <i class="bi bi-lightbulb-fill text-white fs-5"></i>
+            </div>
+            <h4 class="mb-0">Consejo Pro</h4>
+          </div>
+          <p class="mb-0">
+            Para un mejor rendimiento en producción, asegúrate de minificar los
+            archivos CSS y JavaScript. La versión CDN ya viene minificada por
+            defecto.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
+/>

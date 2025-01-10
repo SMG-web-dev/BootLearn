@@ -1,0 +1,235 @@
+<section id="pagination" class="mb-5">
+  <!-- Encabezado principal -->
+  <div class="d-flex align-items-center mb-4">
+    <div class="feature-icon bg-primary bg-opacity-10 p-3 rounded-3 me-3">
+      <i class="bi bi-book text-primary fs-4"></i>
+    </div>
+    <h1 class="display-4 fw-bold mb-0">Paginación</h1>
+  </div>
+
+  <!-- Descripción principal -->
+  <div class="card border-0 shadow-sm mb-4">
+    <div class="card-body p-4">
+      <p class="lead text-secondary">
+        La paginación permite dividir grandes cantidades de contenido en páginas
+        más pequeñas y manejables, mejorando la navegación del usuario.
+      </p>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <!-- Paginación Básica -->
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center mb-4">
+            <div
+              class="feature-icon bg-primary bg-opacity-10 p-3 rounded-3 me-3"
+            >
+              <i class="bi bi-chevron-bar-expand text-primary fs-4"></i>
+            </div>
+            <div>
+              <h3 class="h4 mb-1">Paginación Básica</h3>
+              <p class="text-secondary mb-0">Estructura simple</p>
+            </div>
+          </div>
+
+          <div class="example-pagination mb-3 p-3 bg-light rounded-3">
+            <nav aria-label="Navegación de página">
+              <ul class="pagination mb-0">
+                <li class="page-item">
+                  <a class="page-link" href="#">Anterior</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Siguiente</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="code-example bg-dark rounded-3 p-3">
+            <pre
+              class="mb-0"
+            ><code class="language-html">&lt;nav aria-label="Navegación de página"&gt;
+  &lt;ul class="pagination"&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Anterior&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Siguiente&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Estados Activo y Deshabilitado -->
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center mb-4">
+            <div
+              class="feature-icon bg-success bg-opacity-10 p-3 rounded-3 me-3"
+            >
+              <i class="bi bi-toggle-on text-success fs-4"></i>
+            </div>
+            <div>
+              <h3 class="h4 mb-1">Estados</h3>
+              <p class="text-secondary mb-0">Activo y deshabilitado</p>
+            </div>
+          </div>
+
+          <div class="example-pagination mb-3 p-3 bg-light rounded-3">
+            <nav aria-label="Navegación de página">
+              <ul class="pagination mb-0">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Siguiente</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="code-example bg-dark rounded-3 p-3">
+            <pre
+              class="mb-0"
+            ><code class="language-html">&lt;nav aria-label="Navegación de página"&gt;
+  &lt;ul class="pagination"&gt;
+    &lt;li class="page-item disabled"&gt;
+      &lt;a class="page-link" href="#" tabindex="-1"&gt;Anterior&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="page-item active"&gt;
+      &lt;a class="page-link" href="#"&gt;2&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tamaños -->
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center mb-4">
+            <div class="feature-icon bg-info bg-opacity-10 p-3 rounded-3 me-3">
+              <i class="bi bi-arrows-angle-expand text-info fs-4"></i>
+            </div>
+            <div>
+              <h3 class="h4 mb-1">Tamaños</h3>
+              <p class="text-secondary mb-0">Variantes de dimensiones</p>
+            </div>
+          </div>
+
+          <div class="example-pagination mb-3 p-3 bg-light rounded-3">
+            <nav class="mb-2" aria-label="Paginación grande">
+              <ul class="pagination pagination-lg mb-0">
+                <li class="page-item active" aria-current="page">
+                  <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+              </ul>
+            </nav>
+
+            <nav class="mb-2" aria-label="Paginación normal">
+              <ul class="pagination mb-0">
+                <li class="page-item active" aria-current="page">
+                  <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+              </ul>
+            </nav>
+
+            <nav aria-label="Paginación pequeña">
+              <ul class="pagination pagination-sm mb-0">
+                <li class="page-item active" aria-current="page">
+                  <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="code-example bg-dark rounded-3 p-3">
+            <pre
+              class="mb-0"
+            ><code class="language-html">&lt;ul class="pagination pagination-lg"&gt;...&lt;/ul&gt;
+&lt;ul class="pagination"&gt;...&lt;/ul&gt;
+&lt;ul class="pagination pagination-sm"&gt;...&lt;/ul&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alineación -->
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center mb-4">
+            <div
+              class="feature-icon bg-warning bg-opacity-10 p-3 rounded-3 me-3"
+            >
+              <i class="bi bi-text-center text-warning fs-4"></i>
+            </div>
+            <div>
+              <h3 class="h4 mb-1">Alineación</h3>
+              <p class="text-secondary mb-0">Posicionamiento flexible</p>
+            </div>
+          </div>
+
+          <div class="example-pagination mb-3 p-3 bg-light rounded-3">
+            <nav class="mb-2" aria-label="Paginación centrada">
+              <ul class="pagination justify-content-center mb-0">
+                <li class="page-item disabled">
+                  <a class="page-link">Anterior</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Siguiente</a>
+                </li>
+              </ul>
+            </nav>
+
+            <nav aria-label="Paginación al final">
+              <ul class="pagination justify-content-end mb-0">
+                <li class="page-item disabled">
+                  <a class="page-link">Anterior</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Siguiente</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="code-example bg-dark rounded-3 p-3">
+            <pre
+              class="mb-0"
+            ><code class="language-html">&lt;ul class="pagination justify-content-center"&gt;...&lt;/ul&gt;
+&lt;ul class="pagination justify-content-end"&gt;...&lt;/ul&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,53 @@
+<section id="tooltip" class="mb-5">
+  <h2 class="section-header">Tooltips en Bootstrap 5</h2>
+  <div class="component-description">
+    <p>
+      El componente Tooltip es un pequeño cuadro emergente que aparece cuando el
+      usuario mueve el puntero del mouse sobre un elemento. Se utiliza para
+      proporcionar información adicional.
+    </p>
+  </div>
+
+  <div class="example-wrapper">
+    <h3>Tooltip Básico</h3>
+    <div class="component-demo">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="tooltip"
+        title="¡Hooray!"
+      >
+        Hover over me!
+      </button>
+    </div>
+    <div class="code-example">
+      <pre><code class="language-html">
+&lt;button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="¡Hooray!"&gt;Hover over me!&lt;/button&gt;
+      </code></pre>
+    </div>
+  </div>
+  <br />
+  <div class="example-wrapper">
+    <h3>Inicializar Tooltips</h3>
+    <div>
+      <script>
+        var tooltipTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      </script>
+    </div>
+    <div class="code-example">
+      <pre><code class="language-html">
+&lt;script&gt;
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+});
+&lt;/script&gt;
+      </code></pre>
+    </div>
+  </div>
+</section>

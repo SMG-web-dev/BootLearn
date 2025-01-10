@@ -1,0 +1,45 @@
+<section id="popover" class="mb-5">
+  <h2 class="section-header">Popovers en Bootstrap 5</h2>
+  <div class="component-description">
+    <p>El componente Popover es similar a los tooltips; es un cuadro emergente que aparece cuando el usuario hace clic en un elemento. La diferencia es que el popover puede contener mucho más contenido.</p>
+  </div>
+
+  <div class="example-wrapper">
+    <h3>Popover Básico</h3>
+    <div class="component-demo">
+      <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Encabezado del Popover" data-bs-content="Contenido del popover">Toggle popover</button>
+    </div>
+    <div class="code-example">
+      <pre><code class="language-html">
+&lt;button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Encabezado del Popover" data-bs-content="Contenido del popover"&gt;Toggle popover&lt;/button&gt;
+      </code></pre>
+    </div>
+  </div>
+
+  <div class="example-wrapper">
+    <h3>Inicializar Popovers</h3>
+    <div class="component-demo">
+      <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl);
+        });
+      </script>
+    </div>
+    <div class="code-example">
+      <pre><code class="language-html">
+&lt;script&gt;
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl);
+});
+&lt;/script&gt;
+      </code></pre>
+    </div>
+  </div>
+</section>
+<script>
+  function navigateTo(page) {
+    window.location.href = page;
+  }
+</script>

@@ -1,0 +1,78 @@
+@media (max-width: 1023px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: var(--light-color);
+    padding-top: 4rem;
+    width: 250px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+  }
+}
+
+/* Desktop styles - No toggle  */
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 280px;
+    transform: none;
+    position: fixed;
+    height: 100vh;
+    transition: none;
+    padding-top: 1rem;
+  }
+
+  .main-content {
+    margin-left: 280px;
+    padding: 2rem;
+    width: calc(100% - 280px);
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  footer {
+    margin-left: 272px;
+  }
+}
+
+/* Para el botón animado del sidebar */
+@media (prefers-reduced-motion: reduce) {
+  .menu-toggle,
+  .menu-hamburguer::before,
+  .menu-hamburguer::after,
+  .menu-hamburguer span {
+    transition-duration: 0.1s;
+  }
+}
+
+@media (max-width: 1023px) {
+  .menu-toggle {
+    top: 0.7rem;
+    right: 0.7rem;
+  }
+}
