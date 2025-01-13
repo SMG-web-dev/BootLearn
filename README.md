@@ -18,6 +18,14 @@ An interactive web-based platform designed to help developers learn and master B
 
 ```
 BOOTLEARN/
+├── js/                     # JS modules
+│   ├── scripts.js
+│   └── js/ 
+│       ├── bootstrap.js
+│       ├── codeCopy.js
+│       ├── footer.js
+│       ├── navigation.js
+│       └── scrollSpy.js
 ├── css/                    # CSS stylesheets
 │   ├── colors.css
 │   ├── copyButton.css
