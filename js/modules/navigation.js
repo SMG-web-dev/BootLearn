@@ -39,6 +39,9 @@ export function setupNavigation() {
             .then(html => {
                 dynamicContent.innerHTML = html;
                 reinitializeComponents();
+
+                // Mover la página hacia la parte superior
+                window.scrollTo(0, 0);
             })
             .catch(error => {
                 dynamicContent.innerHTML = `
