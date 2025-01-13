@@ -1,48 +1,106 @@
 <section id="jumbotron" class="mb-5">
-  <h2 class="section-header">Jumbotron en Bootstrap 5</h2>
-  <div class="component-description">
-    <p>Un jumbotron es un contenedor grande y destacado que se utiliza para llamar la atención sobre contenido especial o información. Aunque el jumbotron fue introducido en Bootstrap 3, ya no se admite en Bootstrap 5. Sin embargo, puedes lograr un efecto similar utilizando un <code>&lt;div&gt;</code> y aplicando clases de utilidad.</p>
+  <!-- Encabezado principal -->
+  <div class="d-flex align-items-center mb-4">
+    <div class="feature-icon bg-primary bg-opacity-10 p-3 rounded-3 me-3">
+      <i class="bi bi-window-desktop text-primary fs-4"></i>
+    </div>
+    <h1 class="display-4 fw-bold mb-0">Jumbotron</h1>
   </div>
 
-  <div class="example-wrapper">
-    <h3>Ejemplo de Jumbotron</h3>
-    <div class="component-demo">
-      <div class="mt-4 p-5 bg-primary text-white rounded">
-        <h1>Ejemplo de Jumbotron</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </div>
-    <div class="code-example">
-      <pre><code class="language-html">
-&lt;div class="mt-4 p-5 bg-primary text-white rounded"&gt;
-  &lt;h1&gt;Ejemplo de Jumbotron&lt;/h1&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
-&lt;/div&gt;
-      </code></pre>
+  <!-- Descripción principal -->
+  <div class="card border-0 shadow-sm mb-4">
+    <div class="card-body p-4">
+      <p class="lead text-secondary">
+        Aunque el componente Jumbotron fue eliminado en Bootstrap 5, puedes
+        crear elementos similares utilizando las utilidades de Bootstrap para
+        destacar contenido importante.
+      </p>
     </div>
   </div>
 
-  <div class="example-wrapper">
-    <h3>Jumbotron con Texto de Ejemplo</h3>
-    <div class="component-demo">
-      <div class="jumbotron">
-        <h1 class="display-4">¡Hola, mundo!</h1>
-        <p class="lead">Este es un simple jumbotron, un simple contenedor para llamar la atención sobre contenido especial.</p>
-        <hr class="my-4">
-        <p>Utiliza clases de Bootstrap para estilizar tu contenido.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Aprender más</a>
+  <div class="row g-4">
+    <!-- Jumbotron Básico -->
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center mb-4">
+            <div
+              class="feature-icon bg-primary bg-opacity-10 p-3 rounded-3 me-3"
+            >
+              <i class="bi bi-window-desktop text-primary fs-4"></i>
+            </div>
+            <div>
+              <h3 class="h4 mb-1">Jumbotron Básico</h3>
+              <p class="text-secondary mb-0">Estructura simple</p>
+            </div>
+          </div>
+
+          <div class="example-jumbotron mb-3 p-3 bg-light rounded-3">
+            <div class="p-5 mb-4 bg-light rounded-3">
+              <h1 class="display-5 fw-bold">Ejemplo de Jumbotron</h1>
+              <p class="fs-4">
+                Utiliza clases de utilidad para recrear el antiguo componente
+                jumbotron y mostrar contenido destacado.
+              </p>
+              <button class="btn btn-primary btn-lg" type="button">
+                Ejemplo de botón
+              </button>
+            </div>
+          </div>
+
+          <div class="code-example bg-dark rounded-3 p-3">
+            <pre
+              class="mb-0"
+            ><code class="language-html">&lt;div class="p-5 mb-4 bg-light rounded-3"&gt;
+  &lt;h1 class="display-5 fw-bold"&gt;Ejemplo de Jumbotron&lt;/h1&gt;
+  &lt;p class="fs-4"&gt;Utiliza clases de utilidad para recrear el antiguo componente jumbotron y mostrar contenido destacado.&lt;/p&gt;
+  &lt;button class="btn btn-primary btn-lg" type="button"&gt;Ejemplo de botón&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="code-example">
-      <pre><code class="language-html">
-&lt;div class="jumbotron"&gt;
-  &lt;h1 class="display-4"&gt;¡Hola, mundo!&lt;/h1&gt;
-  &lt;p class="lead"&gt;Este es un simple jumbotron, un simple contenedor para llamar la atención sobre contenido especial.&lt;/p&gt;
-  &lt;hr class="my-4"&gt;
-  &lt;p&gt;Utiliza clases de Bootstrap para estilizar tu contenido.&lt;/p&gt;
-  &lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Aprender más&lt;/a&gt;
-&lt;/div&gt;
-      </code></pre>
+
+    <!-- Jumbotron con Fondo -->
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center mb-4">
+            <div
+              class="feature-icon bg-success bg-opacity-10 p-3 rounded-3 me-3"
+            >
+              <i class="bi bi-palette text-success fs-4"></i>
+            </div>
+            <div>
+              <h3 class="h4 mb-1">Jumbotron con Fondo</h3>
+              <p class="text-secondary mb-0">Variante con color de fondo</p>
+            </div>
+          </div>
+
+          <div class="example-jumbotron mb-3 p-3 bg-light rounded-3">
+            <div class="p-5 mb-4 bg-primary bg-opacity-75 text-white rounded-3">
+              <h1 class="display-5 fw-bold">Jumbotron con Color</h1>
+              <p class="fs-4">
+                Ejemplo utilizando color de fondo y texto en blanco para mayor
+                contraste.
+              </p>
+              <button class="btn btn-light btn-lg" type="button">
+                Llamada a la acción
+              </button>
+            </div>
+          </div>
+
+          <div class="code-example bg-dark rounded-3 p-3">
+            <pre
+              class="mb-0"
+            ><code class="language-html">&lt;div class="p-5 mb-4 bg-primary bg-opacity-75 text-white rounded-3"&gt;
+  &lt;h1 class="display-5 fw-bold"&gt;Jumbotron con Color&lt;/h1&gt;
+  &lt;p class="fs-4"&gt;Ejemplo utilizando color de fondo y texto en blanco para mayor contraste.&lt;/p&gt;
+  &lt;button class="btn btn-light btn-lg" type="button"&gt;Llamada a la acción&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

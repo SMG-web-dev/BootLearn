@@ -1,56 +1,243 @@
-<section id="modal" class="mb-5">
-  <h2 class="section-header">Modals en Bootstrap 5</h2>
-  <div class="component-description">
-    <p>El componente Modal es un cuadro de diálogo o ventana emergente que se muestra sobre la página actual. Puedes crear un modal utilizando la clase <code>.modal</code>.</p>
+<section id="modals" class="mb-5">
+  <!-- [Previous header and description content remains the same] -->
+  <div class="d-flex align-items-center mb-4">
+    <div class="feature-icon bg-primary bg-opacity-10 p-3 rounded-3 me-3">
+      <i class="bi bi-window text-primary fs-4"></i>
+    </div>
+    <h1 class="display-4 fw-bold mb-0">Modales</h1>
   </div>
 
-  <div class="example-wrapper">
-    <h3>Modal Básico</h3>
-    <div class="component-demo">
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-        Abrir modal
-      </button>
+  <!-- Descripción principal -->
+  <div class="card border-0 shadow-sm mb-4">
+    <div class="card-body p-4">
+      <p class="lead text-secondary">
+        Los modales son ventanas de diálogo que se superponen sobre el contenido
+        principal para mostrar información importante o solicitar acciones al
+        usuario.
+      </p>
+    </div>
+  </div>
 
-      <div class="modal" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Encabezado del Modal</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  <div class="row g-4">
+    <!-- Modal Básico -->
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center mb-4">
+            <div
+              class="feature-icon bg-primary bg-opacity-10 p-3 rounded-3 me-3"
+            >
+              <i class="bi bi-window text-primary fs-4"></i>
             </div>
-            <div class="modal-body">
-              Cuerpo del modal..
+            <div>
+              <h3 class="h4 mb-1">Modal Básico</h3>
+              <p class="text-secondary mb-0">Estructura simple</p>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+
+          <div class="example-modal mb-3 p-3 bg-light rounded-3">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#basicModal"
+            >
+              Abrir modal
+            </button>
+
+            <div class="modal" id="basicModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Título del Modal</h4>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body">Contenido del modal...</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Guardar
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="code-example bg-dark rounded-3 p-3">
+            <pre
+              class="mb-0"
+            ><code class="language-html">&lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#basicModal"&gt;
+  Abrir modal
+&lt;/button&gt;
+
+&lt;div class="modal" id="basicModal"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h4 class="modal-title"&gt;Título del Modal&lt;/h4&gt;
+        &lt;button type="button" class="btn-close" data-bs-dismiss="modal"&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        Contenido del modal...
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gt;Cerrar&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Guardar&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
           </div>
         </div>
       </div>
     </div>
-    <div class="code-example">
-      <pre><code class="language-html">
-&lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal"&gt;
-  Abrir modal
-&lt;/button&gt;
 
-&lt;div class="modal" id="myModal"&gt;
-  &lt;div class="modal-dialog"&gt;
+    <!-- Modal con Tamaños -->
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center mb-4">
+            <div
+              class="feature-icon bg-success bg-opacity-10 p-3 rounded-3 me-3"
+            >
+              <i class="bi bi-arrows-angle-expand text-success fs-4"></i>
+            </div>
+            <div>
+              <h3 class="h4 mb-1">Tamaños de Modal</h3>
+              <p class="text-secondary mb-0">Diferentes dimensiones</p>
+            </div>
+          </div>
+
+          <div class="example-modal mb-3 p-3 bg-light rounded-3">
+            <button
+              type="button"
+              class="btn btn-primary me-2 mb-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modalLg"
+            >
+              Modal Grande
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary me-2 mb-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modalSm"
+            >
+              Modal Pequeño
+            </button>
+
+            <!-- Modal Grande -->
+            <div class="modal" id="modalLg">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal Grande</h4>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Este es un ejemplo de modal grande. Tiene más espacio para
+                    contenido.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Guardar Cambios
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Pequeño -->
+            <div class="modal" id="modalSm">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal Pequeño</h4>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body">Modal de tamaño reducido.</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      OK
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-example bg-dark rounded-3 p-3">
+            <pre
+              class="mb-0"
+            ><code class="language-html">&lt;!-- Modal Grande --&gt;
+&lt;div class="modal" id="modalLg"&gt;
+  &lt;div class="modal-dialog modal-lg"&gt;
     &lt;div class="modal-content"&gt;
       &lt;div class="modal-header"&gt;
-        &lt;h4 class="modal-title"&gt;Encabezado del Modal&lt;/h4&gt;
+        &lt;h4 class="modal-title"&gt;Modal Grande&lt;/h4&gt;
         &lt;button type="button" class="btn-close" data-bs-dismiss="modal"&gt;&lt;/button&gt;
       &lt;/div&gt;
       &lt;div class="modal-body"&gt;
-        Cuerpo del modal..
+        Este es un ejemplo de modal grande...
       &lt;/div&gt;
       &lt;div class="modal-footer"&gt;
-        &lt;button type="button" class="btn btn-danger" data-bs-dismiss="modal"&gt;Cerrar&lt;/button&gt;
+        &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gt;Cerrar&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Guardar Cambios&lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-      </code></pre>
+
+&lt;!-- Modal Pequeño --&gt;
+&lt;div class="modal" id="modalSm"&gt;
+  &lt;div class="modal-dialog modal-sm"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h4 class="modal-title"&gt;Modal Pequeño&lt;/h4&gt;
+        &lt;button type="button" class="btn-close" data-bs-dismiss="modal"&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        Modal de tamaño reducido.
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gt;OK&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
