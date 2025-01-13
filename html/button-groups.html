@@ -1,153 +1,199 @@
+<!-- Sección Button Groups -->
 <section id="button-groups" class="mb-5">
-  <h2 class="section-header">Grupos de Botones en Bootstrap 5</h2>
-  <div class="component-description">
-    <p>Bootstrap 5 permite agrupar una serie de botones juntos (en una sola línea) en un grupo de botones. Utiliza un elemento <code>&lt;div&gt;</code> con la clase <code>.btn-group</code> para crear un grupo de botones.</p>
+  <div class="d-flex align-items-center mb-4">
+    <div class="feature-icon bg-primary bg-opacity-10 p-3 rounded-3 me-3">
+      <i class="bi bi-collection text-primary fs-4"></i>
+    </div>
+    <h1 class="display-4 fw-bold mb-0">Button Groups</h1>
   </div>
 
-  <div class="example-wrapper">
-    <h3>Ejemplo de Grupo de Botones</h3>
-    <div class="component-demo">
-      <div class="btn-group">
-        <button type="button" class="btn btn-primary">Apple</button>
-        <button type="button" class="btn btn-primary">Samsung</button>
-        <button type="button" class="btn btn-primary">Sony</button>
-      </div>
+  <div class="card border-0 shadow-sm mb-4">
+    <div class="card-body p-4">
+      <p class="lead text-secondary">
+        Los grupos de botones permiten combinar varios botones en una sola línea
+        o apilarlos verticalmente, creando conjuntos de controles relacionados.
+      </p>
     </div>
-    <div class="code-example">
-      <pre><code class="language-html">
+  </div>
+
+  <div class="row g-4">
+    <!-- Grupo Horizontal -->
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center mb-4">
+            <div
+              class="feature-icon bg-warning bg-opacity-10 p-3 rounded-3 me-3"
+            >
+              <i class="bi bi-grip-horizontal text-warning fs-4"></i>
+            </div>
+            <div>
+              <h3 class="h4 mb-1">Grupo Horizontal</h3>
+              <p class="text-secondary mb-0">Botones en línea</p>
+            </div>
+          </div>
+
+          <div class="example-buttons mb-3 p-3 bg-light rounded-3">
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary">Left</button>
+              <button type="button" class="btn btn-primary">Middle</button>
+              <button type="button" class="btn btn-primary">Right</button>
+            </div>
+          </div>
+
+          <div class="code-example bg-dark rounded-3 p-3">
+            <pre class="mb-0"><code class="language-html">
 &lt;div class="btn-group"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Sony&lt;/button&gt;
-&lt;/div&gt;
-      </code></pre>
-    </div>
-  </div>
-
-  <div class="example-wrapper">
-    <h3>Botones de Grupo Grande</h3>
-    <div class="component-demo">
-      <div class="btn-group btn-group-lg">
-        <button type="button" class="btn btn-primary">Apple</button>
-        <button type="button" class="btn btn-primary">Samsung</button>
-        <button type="button" class="btn btn-primary">Sony</button>
-      </div>
-    </div>
-    <div class="code-example">
-      <pre><code class="language-html">
-&lt;div class="btn-group btn-group-lg"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Sony&lt;/button&gt;
-&lt;/div&gt;
-      </code></pre>
-    </div>
-  </div>
-
-  <div class="example-wrapper">
-    <h3>Botones de Grupo Pequeño</h3>
-    <div class="component-demo">
-      <div class="btn-group btn-group-sm">
-        <button type="button" class="btn btn-primary">Apple</button>
-        <button type="button" class="btn btn-primary">Samsung</button>
-        <button type="button" class="btn btn-primary">Sony</button>
-      </div>
-    </div>
-    <div class="code-example">
-      <pre><code class="language-html">
-&lt;div class="btn-group btn-group-sm"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Sony&lt;/button&gt;
-&lt;/div&gt;
-      </code></pre>
-    </div>
-  </div>
-
-  <div class="example-wrapper">
-    <h3>Grupos de Botones Verticales</h3>
-    <div class="component-demo">
-      <div class="btn-group-vertical">
-        <button type="button" class="btn btn-primary">Apple</button>
-        <button type="button" class="btn btn-primary">Samsung</button>
-        <button type="button" class="btn btn-primary">Sony</button>
-      </div>
-    </div>
-    <div class="code-example">
-      <pre><code class="language-html">
-&lt;div class="btn-group-vertical"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Sony&lt;/button&gt;
-&lt;/div&gt;
-      </code></pre>
-    </div>
-  </div>
-
-  <div class="example-wrapper">
-    <h3>Grupos de Botones Lado a Lado</h3>
-    <div class="component-demo">
-      <div class="btn-group">
-        <button type="button" class="btn btn-primary">Apple</button>
-        <button type="button" class="btn btn-primary">Samsung</button>
-        <button type="button" class="btn btn-primary">Sony</button>
-      </div>
-      <div class="btn-group">
-        <button type="button" class="btn btn-primary">BMW</button>
-        <button type="button" class="btn btn-primary">Mercedes</button>
-        <button type="button" class="btn btn-primary">Volvo</button>
-      </div>
-    </div>
-    <div class="code-example">
-      <pre><code class="language-html">
-&lt;div class="btn-group"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Sony&lt;/button&gt;
-&lt;/div&gt;
-&lt;div class="btn-group"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;BMW&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Mercedes&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Volvo&lt;/button&gt;
-&lt;/div&gt;
-      </code></pre>
-    </div>
-  </div>
-
-  <div class="example-wrapper">
-    <h3>Grupos de Botones Anidados</h3>
-    <div class="component-demo">
-      <div class="btn-group">
-        <button type="button" class="btn btn-primary">Apple</button>
-        <button type="button" class="btn btn-primary">Samsung</button>
-        <div class="btn-group">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Tablet</a>
-            <a class="dropdown-item" href="#">Smartphone</a>
+  &lt;button type="button" class="btn btn-primary"&gt;Left&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Middle&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Right&lt;/button&gt;
+&lt;/div&gt;</code></pre>
           </div>
         </div>
       </div>
     </div>
-    <div class="code-example">
-      <pre><code class="language-html">
-&lt;div class="btn-group"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;Sony&lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Tablet&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Smartphone&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-      </code></pre>
+
+    <!-- Grupo Vertical -->
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center mb-4">
+            <div
+              class="feature-icon bg-danger bg-opacity-10 p-3 rounded-3 me-3"
+            >
+              <i class="bi bi-grip-vertical text-danger fs-4"></i>
+            </div>
+            <div>
+              <h3 class="h4 mb-1">Grupo Vertical</h3>
+              <p class="text-secondary mb-0">Botones apilados</p>
+            </div>
+          </div>
+
+          <div class="example-buttons mb-3 p-3 bg-light rounded-3">
+            <div class="btn-group-vertical">
+              <button type="button" class="btn btn-primary">Top</button>
+              <button type="button" class="btn btn-primary">Middle</button>
+              <button type="button" class="btn btn-primary">Bottom</button>
+            </div>
+          </div>
+
+          <div class="code-example bg-dark rounded-3 p-3">
+            <pre class="mb-0"><code class="language-html">
+&lt;div class="btn-group-vertical"&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Top&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Middle&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Bottom&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center mb-4">
+            <div
+              class="feature-icon bg-success bg-opacity-10 p-3 rounded-3 me-3"
+            >
+              <i class="bi bi-grid-3x3-gap text-success fs-4"></i>
+            </div>
+            <div>
+              <h3 class="h4 mb-1">Side by Side</h3>
+              <p class="text-secondary mb-0">
+                Grupos de botones uno al lado del otro
+              </p>
+            </div>
+          </div>
+
+          <div class="example-buttons mb-3 p-3 bg-light rounded-3">
+            <div class="d-flex gap-2">
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary">1</button>
+                <button type="button" class="btn btn-primary">2</button>
+                <button type="button" class="btn btn-primary">3</button>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary">4</button>
+                <button type="button" class="btn btn-secondary">5</button>
+                <button type="button" class="btn btn-secondary">6</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-example bg-dark rounded-3 p-3">
+            <pre class="mb-0"><code class="language-html">
+    &lt;div class="d-flex gap-2"&gt;
+      &lt;div class="btn-group"&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;1&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;2&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;3&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="btn-group"&gt;
+        &lt;button type="button" class="btn btn-secondary"&gt;4&lt;/button&gt;
+        &lt;button type="button" class="btn btn-secondary"&gt;5&lt;/button&gt;
+        &lt;button type="button" class="btn btn-secondary"&gt;6&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nesting Button Groups & Dropdown Menus -->
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center mb-4">
+            <div class="feature-icon bg-info bg-opacity-10 p-3 rounded-3 me-3">
+              <i class="bi bi-diagram-3 text-info fs-4"></i>
+            </div>
+            <div>
+              <h3 class="h4 mb-1">Dropdowns</h3>
+              <p class="text-secondary mb-0">
+                Grupos de botones anidados con menús desplegables
+              </p>
+            </div>
+          </div>
+
+          <div class="example-buttons mb-3 p-3 bg-light rounded-3">
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary">1</button>
+              <button type="button" class="btn btn-primary">2</button>
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-example bg-dark rounded-3 p-3">
+            <pre class="mb-0"><code class="language-html">
+    &lt;div class="btn-group"&gt;
+      &lt;button type="button" class="btn btn-primary"&gt;1&lt;/button&gt;
+      &lt;button type="button" class="btn btn-primary"&gt;2&lt;/button&gt;
+      &lt;div class="btn-group"&gt;
+        &lt;button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;
+          Dropdown
+        &lt;/button&gt;
+        &lt;ul class="dropdown-menu"&gt;
+          &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<script>
-  function navigateTo(page) {
-    window.location.href = page;
-  }
-</script> 
