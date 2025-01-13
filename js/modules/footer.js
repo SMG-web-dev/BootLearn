@@ -74,10 +74,10 @@ function createFooter() {
         <!-- Enlaces Sociales -->
         <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
             <div class="social-links">
-                <a href="#" class="social-link" aria-label="GitHub" title="GitHub">
+                <a href="https://github.com/SMG-web-dev" class="social-link" aria-label="GitHub" title="GitHub">
                     <i class="bi bi-github"></i>
                 </a>
-                <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/smg-web-dev/" class="social-link" aria-label="LinkedIn" title="LinkedIn">
                     <i class="bi bi-linkedin"></i>
                 </a>
             </div>

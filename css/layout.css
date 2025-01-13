@@ -22,7 +22,7 @@
 
 /* Ajustar específicamente la scrollbar de los bloques de código */
 .code-example {
-  max-height: 300px;
+  max-height: 300vh;
   overflow-y: auto;
 }
 
