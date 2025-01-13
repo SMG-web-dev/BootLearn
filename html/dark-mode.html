@@ -1,99 +1,65 @@
-<!-- Sección Dark Mode -->
 <section id="dark-mode" class="mb-5">
-  <div class="d-flex align-items-center mb-4">
-    <div class="feature-icon bg-primary bg-opacity-10 p-3 rounded-3 me-3">
-      <i class="bi bi-moon-stars text-primary fs-4"></i>
+  <h2 class="section-header">Modo Oscuro en Bootstrap 5</h2>
+  <div class="component-description">
+    <p>Bootstrap permite implementar un modo oscuro en tu aplicación, mejorando la experiencia del usuario en entornos con poca luz.</p>
+    <p>Esto es especialmente útil para aplicaciones que se utilizan en la noche o en condiciones de poca luz. Puedes activar el modo oscuro utilizando clases de Bootstrap.</p>
+  </div>
+  
+  <div class="example-wrapper">
+    <h3>Ejemplo de Modo Oscuro</h3>
+    <div class="component-demo">
+      <div class="bg-dark text-white p-3">Este es un ejemplo de modo oscuro.</div>
     </div>
-    <h1 class="display-4 fw-bold mb-0">Dark Mode</h1>
+    <div class="code-example">
+      <pre><code class="language-html">
+&lt;div class="bg-dark text-white p-3"&gt;Este es un ejemplo de modo oscuro.&lt;/div&gt;
+      </code></pre>
+    </div>
   </div>
 
-  <div class="card border-0 shadow-sm mb-4">
-    <div class="card-body p-4">
-      <p class="lead text-secondary">
-        El modo oscuro mejora la experiencia del usuario en entornos con poca
-        luz y reduce la fatiga visual. Bootstrap 5 incluye soporte nativo para
-        temas oscuros.
-      </p>
+  <div class="example-wrapper">
+    <h3>Modo Oscuro para Componentes</h3>
+    <div class="component-demo">
+      <table class="table" data-bs-theme="dark">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Juan</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>María</td>
+            <td>25</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </div>
-
-  <div class="row g-4">
-    <!-- Tema Oscuro Básico -->
-    <div class="col-lg-6">
-      <div class="card border-0 shadow-sm h-100">
-        <div class="card-body p-4">
-          <div class="d-flex align-items-center mb-4">
-            <div class="feature-icon bg-info bg-opacity-10 p-3 rounded-3 me-3">
-              <i class="bi bi-circle-half text-info fs-4"></i>
-            </div>
-            <div>
-              <h3 class="h4 mb-1">Tema Oscuro Básico</h3>
-              <p class="text-secondary mb-0">
-                Aplicación simple del modo oscuro
-              </p>
-            </div>
-          </div>
-
-          <div class="example-dark mb-3 p-3 bg-dark text-white rounded-3">
-            <div class="p-3 border border-light rounded">
-              <h4 class="text-white">Contenido en Modo Oscuro</h4>
-              <p class="mb-0">
-                Este es un ejemplo de contenido en modo oscuro.
-              </p>
-            </div>
-          </div>
-
-          <div class="code-example bg-dark rounded-3 p-3">
-            <pre class="mb-0"><code class="language-html">
-&lt;div class="bg-dark text-white p-3"&gt;
-  &lt;h4&gt;Contenido en Modo Oscuro&lt;/h4&gt;
-  &lt;p&gt;Este es un ejemplo de contenido en modo oscuro.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Componentes en Modo Oscuro -->
-    <div class="col-lg-6">
-      <div class="card border-0 shadow-sm h-100">
-        <div class="card-body p-4">
-          <div class="d-flex align-items-center mb-4">
-            <div
-              class="feature-icon bg-success bg-opacity-10 p-3 rounded-3 me-3"
-            >
-              <i class="bi bi-palette text-success fs-4"></i>
-            </div>
-            <div>
-              <h3 class="h4 mb-1">Componentes Oscuros</h3>
-              <p class="text-secondary mb-0">Elementos con tema oscuro</p>
-            </div>
-          </div>
-
-          <div class="example-dark mb-3 p-3 bg-dark rounded-3">
-            <div class="card text-white bg-dark border-light">
-              <div class="card-header border-light">Header Oscuro</div>
-              <div class="card-body">
-                <h5 class="card-title">Título de Card Oscura</h5>
-                <p class="card-text mb-0">
-                  Contenido de ejemplo en modo oscuro.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="code-example bg-dark rounded-3 p-3">
-            <pre class="mb-0"><code class="language-html">
-&lt;div class="card text-white bg-dark"&gt;
-  &lt;div class="card-header"&gt;Header Oscuro&lt;/div&gt;
-  &lt;div class="card-body"&gt;
-    &lt;h5 class="card-title"&gt;Título de Card Oscura&lt;/h5&gt;
-    &lt;p class="card-text"&gt;Contenido de ejemplo en modo oscuro.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
+    <div class="code-example">
+      <pre><code class="language-html">
+&lt;table class="table" data-bs-theme="dark"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Nombre&lt;/th&gt;
+      &lt;th&gt;Edad&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Juan&lt;/td&gt;
+      &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;María&lt;/td&gt;
+      &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+      </code></pre>
     </div>
   </div>
 </section>

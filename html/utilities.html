@@ -1,237 +1,73 @@
 <section id="utilities" class="mb-5">
-  <!-- Encabezado principal -->
-  <div class="d-flex align-items-center mb-4">
-    <div class="feature-icon bg-primary bg-opacity-10 p-3 rounded-3 me-3">
-      <i class="bi bi-tools text-primary fs-4"></i>
+  <h2 class="section-header">Utilidades en Bootstrap 5</h2>
+  <div class="component-description">
+    <p>Bootstrap ofrece una serie de clases de utilidad para personalizar el diseño, facilitando la aplicación de estilos sin necesidad de CSS adicional.</p>
+    <p>Estas clases permiten ajustar márgenes, rellenos, colores y más, lo que te ayuda a crear un diseño más limpio y organizado.</p>
+  </div>
+  
+  <div class="example-wrapper">
+    <h3>Ejemplo de Utilidades</h3>
+    <div class="component-demo">
+      <div class="p-3 mb-2 bg-primary text-white">Utilidad de Padding</div>
+      <div class="m-3 bg-secondary text-white">Utilidad de Margin</div>
     </div>
-    <h1 class="display-4 fw-bold mb-0">Utilities</h1>
+    <div class="code-example">
+      <pre><code class="language-html">
+&lt;div class="p-3 mb-2 bg-primary text-white"&gt;Utilidad de Padding&lt;/div&gt;
+&lt;div class="m-3 bg-secondary text-white"&gt;Utilidad de Margin&lt;/div&gt;
+      </code></pre>
+    </div>
   </div>
 
-  <!-- Descripción principal -->
-  <div class="card border-0 shadow-sm mb-4">
-    <div class="card-body p-4">
-      <p class="lead text-secondary">
-        Las utilidades de Bootstrap te permiten modificar rápidamente el aspecto
-        y comportamiento de los elementos sin necesidad de CSS personalizado,
-        acelerando el desarrollo y manteniendo la consistencia.
-      </p>
+  <div class="example-wrapper">
+    <h3>Espaciado</h3>
+    <div class="component-demo">
+      <div class="pt-4 bg-warning">Solo tengo un padding superior (1.5rem)</div>
+      <div class="p-5 bg-success">Tengo un padding en todos los lados (3rem)</div>
+      <div class="m-5 pb-5 bg-info">Tengo un margen en todos los lados (3rem) y un padding inferior (3rem)</div>
+    </div>
+    <div class="code-example">
+      <pre><code class="language-html">
+&lt;div class="pt-4 bg-warning"&gt;Solo tengo un padding superior (1.5rem)&lt;/div&gt;
+&lt;div class="p-5 bg-success"&gt;Tengo un padding en todos los lados (3rem)&lt;/div&gt;
+&lt;div class="m-5 pb-5 bg-info"&gt;Tengo un margen en todos los lados (3rem) y un padding inferior (3rem)&lt;/div&gt;
+      </code></pre>
     </div>
   </div>
 
-  <div class="row g-4">
-    <!-- Spacing Utilities -->
-    <div class="col-lg-6">
-      <div class="card border-0 shadow-sm h-100">
-        <div class="card-body p-4">
-          <div class="d-flex align-items-center mb-4">
-            <div
-              class="feature-icon bg-warning bg-opacity-10 p-3 rounded-3 me-3"
-            >
-              <i class="bi bi-arrows-expand text-warning fs-4"></i>
-            </div>
-            <div>
-              <h3 class="h4 mb-1">Espaciado</h3>
-              <p class="text-secondary mb-0">Margin y Padding</p>
-            </div>
-          </div>
-
-          <div class="example-spacing mb-3 bg-light p-3 rounded-3">
-            <div class="bg-primary text-white p-3 mb-3">padding: 1rem</div>
-            <div class="bg-success text-white p-4 mt-4">
-              padding: 1.5rem, margin-top: 1.5rem
-            </div>
-          </div>
-
-          <div class="code-example bg-dark rounded-3 p-3">
-            <pre class="mb-0"><code class="language-html">
-&lt;div class="p-3 mb-3"&gt;padding: 1rem&lt;/div&gt;
-&lt;div class="p-4 mt-4"&gt;padding: 1.5rem, margin-top: 1.5rem&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
+  <div class="example-wrapper">
+    <h3>Sombras</h3>
+    <div class="component-demo">
+      <div class="shadow-none p-4 mb-4 bg-light">Sin sombra</div>
+      <div class="shadow-sm p-4 mb-4 bg-white">Sombra pequeña</div>
+      <div class="shadow p-4 mb-4 bg-white">Sombra por defecto</div>
+      <div class="shadow-lg p-4 mb-4 bg-white">Sombra grande</div>
     </div>
-
-    <!-- Color Utilities -->
-    <div class="col-lg-6">
-      <div class="card border-0 shadow-sm h-100">
-        <div class="card-body p-4">
-          <div class="d-flex align-items-center mb-4">
-            <div class="feature-icon bg-info bg-opacity-10 p-3 rounded-3 me-3">
-              <i class="bi bi-palette text-info fs-4"></i>
-            </div>
-            <div>
-              <h3 class="h4 mb-1">Colores</h3>
-              <p class="text-secondary mb-0">Backgrounds y Texto</p>
-            </div>
-          </div>
-
-          <div class="example-colors mb-3 bg-light p-3 rounded-3">
-            <div class="p-2 mb-2 bg-primary text-white rounded">
-              Background Primary
-            </div>
-            <div class="p-2 mb-2 bg-success text-white rounded">
-              Background Success
-            </div>
-            <p class="text-primary mb-2">Texto Primary</p>
-            <p class="text-danger mb-0">Texto Danger</p>
-          </div>
-
-          <div class="code-example bg-dark rounded-3 p-3">
-            <pre class="mb-0"><code class="language-html">
-&lt;div class="bg-primary text-white"&gt;Background Primary&lt;/div&gt;
-&lt;p class="text-danger"&gt;Texto Danger&lt;/p&gt;</code></pre>
-          </div>
-        </div>
-      </div>
+    <div class="code-example">
+      <pre><code class="language-html">
+&lt;div class="shadow-none p-4 mb-4 bg-light"&gt;Sin sombra&lt;/div&gt;
+&lt;div class="shadow-sm p-4 mb-4 bg-white"&gt;Sombra pequeña&lt;/div&gt;
+&lt;div class="shadow p-4 mb-4 bg-white"&gt;Sombra por defecto&lt;/div&gt;
+&lt;div class="shadow-lg p-4 mb-4 bg-white"&gt;Sombra grande&lt;/div&gt;
+      </code></pre>
     </div>
+  </div>
 
-    <!-- Display Utilities -->
-    <div class="col-lg-6">
-      <div class="card border-0 shadow-sm h-100">
-        <div class="card-body p-4">
-          <div class="d-flex align-items-center mb-4">
-            <div
-              class="feature-icon bg-success bg-opacity-10 p-3 rounded-3 me-3"
-            >
-              <i class="bi bi-display text-success fs-4"></i>
-            </div>
-            <div>
-              <h3 class="h4 mb-1">Display</h3>
-              <p class="text-secondary mb-0">Comportamiento de visualización</p>
-            </div>
-          </div>
-
-          <div class="example-display mb-3 bg-light p-3 rounded-3">
-            <div class="d-flex bg-info text-white p-2 rounded mb-2">
-              <div class="p-2 bg-primary rounded">Flex item 1</div>
-              <div class="p-2 bg-primary rounded ms-2">Flex item 2</div>
-            </div>
-            <div class="d-none d-md-block bg-warning p-2 rounded">
-              Visible en MD hacia arriba
-            </div>
-          </div>
-
-          <div class="code-example bg-dark rounded-3 p-3">
-            <pre class="mb-0"><code class="language-html">
-&lt;div class="d-flex"&gt;
-  &lt;div&gt;Flex item 1&lt;/div&gt;
-  &lt;div&gt;Flex item 2&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="d-none d-md-block"&gt;Visible en MD hacia arriba&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
+  <div class="example-wrapper">
+    <h3>Colores</h3>
+    <div class="component-demo">
+      <div class="bg-primary text-white p-3">Texto importante</div>
+      <div class="bg-success text-white p-3">Texto de éxito</div>
+      <div class="bg-danger text-white p-3">Texto de peligro</div>
+      <div class="bg-warning text-dark p-3">Texto de advertencia</div>
     </div>
-
-    <!-- Border & Shadow Utilities -->
-    <div class="col-lg-6">
-      <div class="card border-0 shadow-sm h-100">
-        <div class="card-body p-4">
-          <div class="d-flex align-items-center mb-4">
-            <div
-              class="feature-icon bg-danger bg-opacity-10 p-3 rounded-3 me-3"
-            >
-              <i class="bi bi-border-width text-danger fs-4"></i>
-            </div>
-            <div>
-              <h3 class="h4 mb-1">Bordes & Sombras</h3>
-              <p class="text-secondary mb-0">Estilos de bordes y efectos</p>
-            </div>
-          </div>
-
-          <div class="example-borders mb-3 bg-light p-3 rounded-3">
-            <div class="p-3 mb-2 bg-white border rounded">Borde normal</div>
-            <div
-              class="p-3 mb-2 bg-white border-top border-4 border-primary rounded"
-            >
-              Borde superior grueso
-            </div>
-            <div class="p-3 bg-white shadow-lg rounded">Sombra grande</div>
-          </div>
-
-          <div class="code-example bg-dark rounded-3 p-3">
-            <pre class="mb-0"><code class="language-html">
-&lt;div class="border rounded"&gt;Borde normal&lt;/div&gt;
-&lt;div class="border-top border-4 border-primary"&gt;Borde superior grueso&lt;/div&gt;
-&lt;div class="shadow-lg"&gt;Sombra grande&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Position Utilities -->
-    <div class="col-lg-6">
-      <div class="card border-0 shadow-sm h-100">
-        <div class="card-body p-4">
-          <div class="d-flex align-items-center mb-4">
-            <div
-              class="feature-icon bg-primary bg-opacity-10 p-3 rounded-3 me-3"
-            >
-              <i class="bi bi-arrows-move text-primary fs-4"></i>
-            </div>
-            <div>
-              <h3 class="h4 mb-1">Posicionamiento</h3>
-              <p class="text-secondary mb-0">Control de posición</p>
-            </div>
-          </div>
-
-          <div
-            class="example-position mb-3 bg-light p-3 rounded-3 position-relative"
-            style="height: 150px"
-          >
-            <div
-              class="position-absolute top-0 start-0 p-2 bg-primary text-white rounded"
-            >
-              Top-Start
-            </div>
-            <div
-              class="position-absolute bottom-0 end-0 p-2 bg-success text-white rounded"
-            >
-              Bottom-End
-            </div>
-          </div>
-
-          <div class="code-example bg-dark rounded-3 p-3">
-            <pre class="mb-0"><code class="language-html">
-&lt;div class="position-absolute top-0 start-0"&gt;Top-Start&lt;/div&gt;
-&lt;div class="position-absolute bottom-0 end-0"&gt;Bottom-End&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Text Utilities -->
-    <div class="col-lg-6">
-      <div class="card border-0 shadow-sm h-100">
-        <div class="card-body p-4">
-          <div class="d-flex align-items-center mb-4">
-            <div
-              class="feature-icon bg-warning bg-opacity-10 p-3 rounded-3 me-3"
-            >
-              <i class="bi bi-type text-warning fs-4"></i>
-            </div>
-            <div>
-              <h3 class="h4 mb-1">Texto</h3>
-              <p class="text-secondary mb-0">Estilos de texto</p>
-            </div>
-          </div>
-
-          <div class="example-text mb-3 bg-light p-3 rounded-3">
-            <p class="text-start mb-2">Texto alineado a la izquierda</p>
-            <p class="text-center mb-2">Texto centrado</p>
-            <p class="text-uppercase mb-2">Texto en mayúsculas</p>
-            <p class="fw-bold mb-0">Texto en negrita</p>
-          </div>
-
-          <div class="code-example bg-dark rounded-3 p-3">
-            <pre class="mb-0"><code class="language-html">
-&lt;p class="text-start"&gt;Texto alineado a la izquierda&lt;/p&gt;
-&lt;p class="text-center"&gt;Texto centrado&lt;/p&gt;
-&lt;p class="text-uppercase"&gt;Texto en mayúsculas&lt;/p&gt;
-&lt;p class="fw-bold"&gt;Texto en negrita&lt;/p&gt;</code></pre>
-          </div>
-        </div>
-      </div>
+    <div class="code-example">
+      <pre><code class="language-html">
+&lt;div class="bg-primary text-white p-3"&gt;Texto importante&lt;/div&gt;
+&lt;div class="bg-success text-white p-3"&gt;Texto de éxito&lt;/div&gt;
+&lt;div class="bg-danger text-white p-3"&gt;Texto de peligro&lt;/div&gt;
+&lt;div class="bg-warning text-dark p-3"&gt;Texto de advertencia&lt;/div&gt;
+      </code></pre>
     </div>
   </div>
 </section>

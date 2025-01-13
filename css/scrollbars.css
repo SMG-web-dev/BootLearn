@@ -1,67 +1,83 @@
-/* Scrollbar Styles - Global */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--primary) var(--gray-100);
-}
-
+/* Estilo para scrollbars personalizadas */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--gray-100);
+  background: var(--bs-gray-100);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary);
+  background: var(--bs-primary);
   border-radius: 4px;
-  transition: all var(--transition-normal);
-
-  &:hover {
-    background: color-mix(in srgb, var(--primary) 85%, black);
-  }
+  transition: all 0.3s ease;
 }
 
-/* Scrollbar Styles - Sidebar */
-.sidebar {
-  &::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: var(--gray-300);
-    border-radius: 3px;
-
-    &:hover {
-      background: var(--gray-400);
-    }
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bs-primary-dark);
 }
 
-/* Scrollbar Styles - Scrollspy Examples */
-.example-scrollspy {
-  .scrollspy-example,
-  .scrollspy-example-2 {
-    &::-webkit-scrollbar {
-      width: 4px;
-    }
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--bs-primary) var(--bs-gray-100);
+}
 
-    &::-webkit-scrollbar-track {
-      background: var(--gray-100);
-    }
+/* Scrollbars específicas para elementos con scroll */
+.code-example::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
 
-    &::-webkit-scrollbar-thumb {
-      background: var(--gray-400);
+.code-example::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
 
-      &:hover {
-        background: var(--gray-500);
-      }
-    }
-  }
+.code-example::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.code-example::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Scrollbar para el sidebar */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--bs-gray-300);
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--bs-gray-400);
+}
+
+/* Scrollbar para elementos con scroll dentro de ejemplos */
+.example-scrollspy .scrollspy-example::-webkit-scrollbar,
+.example-scrollspy .scrollspy-example-2::-webkit-scrollbar {
+  width: 4px;
+}
+
+.example-scrollspy .scrollspy-example::-webkit-scrollbar-track,
+.example-scrollspy .scrollspy-example-2::-webkit-scrollbar-track {
+  background: var(--bs-gray-100);
+}
+
+.example-scrollspy .scrollspy-example::-webkit-scrollbar-thumb,
+.example-scrollspy .scrollspy-example-2::-webkit-scrollbar-thumb {
+  background: var(--bs-gray-400);
+}
+
+.example-scrollspy .scrollspy-example::-webkit-scrollbar-thumb:hover,
+.example-scrollspy .scrollspy-example-2::-webkit-scrollbar-thumb:hover {
+  background: var(--bs-gray-500);
 }
