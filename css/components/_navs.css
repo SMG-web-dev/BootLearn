@@ -1,0 +1,75 @@
+/* Estilos de navegación principal */
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+  color: var(--bs-gray-700);
+  border-radius: var(--nav-border-radius);
+  margin: 0.2rem 0.8rem;
+  transition: all var(--nav-transition-timing);
+  position: relative;
+}
+
+.nav-link:hover {
+  background-color: rgba(var(--bs-primary-rgb), 0.1);
+  color: var(--bs-primary);
+  transform: translateX(var(--nav-hover-translate));
+}
+
+.nav-link.active {
+  background: var(--primary-color);
+  color: white;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Icono de navegación */
+.nav-link i {
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+  width: var(--nav-icon-size);
+  height: var(--nav-icon-size);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+}
+
+.nav-link:hover i {
+  transform: scale(1.15) rotate(3deg);
+  box-shadow: var(--shadow-md);
+}
+
+.nav-link.active i {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.1);
+}
+
+/* Indicador lateral */
+.nav-item {
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background-color: var(--bs-primary);
+  transition: height 0.2s ease;
+}
+
+.nav-link:hover::before {
+  height: 100%;
+}
+
+/* Demo de componentes */
+.component-demo {
+  padding: 2rem;
+  border-radius: var(--nav-border-radius);
+  background-color: var(--light-color);
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+}

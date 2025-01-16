@@ -1,0 +1,87 @@
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --success-color: #198754;
+  --info-color: #0dcaf0;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+  --code-bg: #1a1a1a;
+  --text-color: #212529;
+  --text-muted: #6c757d;
+  --border-color: #dee2e6;
+
+  /* Variables específicas del sidebar */
+  --sidebar-width-expanded: 275px;
+  --sidebar-width-collapsed: 60px;
+  --sidebar-padding: 1.5rem;
+  --sidebar-border-radius: 1rem;
+  --sidebar-scrollbar-width: 6px;
+  --sidebar-scrollbar-radius: 3px;
+  --sidebar-text-color: rgba(255, 255, 255, 0.9);
+
+  /* Variables para ejemplos de código */
+  --code-border-radius: 8px;
+  --code-padding: 1.25rem;
+  --code-font-size: 0.9rem;
+  --code-line-height: 1.6;
+  --code-max-height: 300vh;
+
+  /* Variables para el botón de copiar */
+  --copy-btn-padding: 0.5rem 1rem;
+  --copy-btn-font-size: 0.875rem;
+  --copy-btn-radius: 6px;
+  --copy-btn-icon-size: 16px;
+  --copy-btn-gap: 0.5rem;
+
+  /* Colores y opacidades */
+  --copy-btn-bg: rgba(13, 110, 253, 0.9);
+  --copy-btn-bg-hover: rgba(13, 110, 253, 1);
+  --copy-btn-success: rgba(25, 135, 84, 0.9);
+  --copy-btn-error: rgba(220, 53, 69, 0.9);
+
+  /* Sombras */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 4px 12px rgba(13, 110, 253, 0.2);
+
+  /* Transiciones */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-bezier: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Variables específicas del footer */
+  --footer-icon-size: 1.25rem;
+  --social-link-size: 40px;
+  --animation-timing: 0.3s ease;
+  --hover-translate-x: 5px;
+  --hover-translate-y: -2px;
+
+  /* Variables compartidas de navegación */
+  --nav-transition-timing: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --nav-border-radius: 0.5rem;
+  --nav-icon-size: 1.5rem;
+  --nav-hover-translate: 5px;
+
+  /* Variables del toggle */
+  --toggle-min-size: 44px;
+  --toggle-max-size: 56px;
+  --hamburger-width: 18px;
+  --hamburger-height: 2px;
+  --hamburger-gap: 5px;
+
+  /* Sombras */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 3px 6px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  /* Variables para scrollbars */
+  --scrollbar-width-default: 8px;
+  --scrollbar-width-small: 6px;
+  --scrollbar-width-tiny: 4px;
+  --scrollbar-track-color: var(--bs-gray-100);
+  --scrollbar-thumb-color: var(--bs-primary);
+  --scrollbar-radius: 4px;
+  --scrollbar-radius-small: 3px;
+}

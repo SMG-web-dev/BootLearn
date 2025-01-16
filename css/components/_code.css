@@ -1,0 +1,26 @@
+/* Contenedor principal del ejemplo de código */
+.code-example {
+  position: relative;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  border-radius: var(--code-border-radius);
+  box-shadow: var(--shadow-md);
+  max-height: var(--code-max-height);
+  overflow-y: auto;
+}
+
+/* Elementos del código */
+.code-example pre {
+  margin: 0;
+  overflow-x: auto;
+  position: relative;
+  border-radius: var(--code-border-radius);
+}
+
+.code-example code {
+  position: relative;
+  display: block;
+  padding: var(--code-padding);
+  font-size: var(--code-font-size);
+  line-height: var(--code-line-height);
+}

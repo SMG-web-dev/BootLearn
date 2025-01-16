@@ -1,72 +1,32 @@
-/* Demo de componentes */
-.component-demo {
-  padding: 2rem;
-  border-radius: 0.5rem;
-  background-color: var(--light-color);
-  margin-bottom: 1rem;
-  border: 1px solid var(--border-color);
-}
-
-/* Navegación */
-.nav-link {
-  color: var(--text-color);
-  padding: 0.5rem 1rem;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  border-radius: 0.25rem;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.nav-link:hover {
-  background-color: rgba(13, 110, 253, 0.1);
-  color: var(--primary-color);
-}
-
-.nav-link.active {
-  background-color: var(--primary-color);
-  color: white;
-}
-
 /* Menú Toggle */
 .menu-toggle {
-  /* Positioning */
   position: fixed;
   top: 1rem;
   right: 1rem;
   z-index: 1001;
 
-  /* Dimensions - using relative units for better scaling */
-  width: clamp(44px, 3.5vw, 56px);
-  height: clamp(44px, 3.5vw, 56px);
+  width: clamp(var(--toggle-min-size), 3.5vw, var(--toggle-max-size));
+  height: clamp(var(--toggle-min-size), 3.5vw, var(--toggle-max-size));
   padding: 0;
 
-  /* Flexbox for perfect centering */
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  /* Visual styling */
   background-color: var(--primary-color);
   border: none;
-  border-radius: 0.5rem;
+  border-radius: var(--nav-border-radius);
   cursor: pointer;
 
-  /* Smooth transitions */
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
-  /* Better touch target on mobile */
+  transition: all var(--nav-transition-timing);
   touch-action: manipulation;
-
-  /* Improved shadow */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow-sm);
 }
 
-/* Hover and focus states */
 .menu-toggle:hover {
   background-color: color-mix(in srgb, var(--primary-color) 85%, black);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-lg);
 }
 
 .menu-toggle:focus-visible {
@@ -74,15 +34,15 @@
   box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb), 0.25);
 }
 
-/* Icono del menú toggle */
+/* Hamburger Icon */
 .hamburger-icon {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 18px;
-  height: 2px;
+  width: var(--hamburger-width);
+  height: var(--hamburger-height);
   background-color: white;
-  border-radius: 1px;
+  border-radius: calc(var(--hamburger-height) / 2);
   transform: translate(-50%, -50%);
   transition: opacity 0.2s ease;
 }
@@ -92,40 +52,43 @@
   content: "";
   position: absolute;
   left: 50%;
-  width: 18px;
-  height: 2px;
+  width: var(--hamburger-width);
+  height: var(--hamburger-height);
   background-color: white;
-  border-radius: 1px;
+  border-radius: calc(var(--hamburger-height) / 2);
   transform-origin: center;
   transition: transform 0.3s ease, opacity 0.2s ease;
 }
 
 .hamburger-icon::before {
-  top: calc(50% - 5px);
+  top: calc(50% - var(--hamburger-gap));
   transform: translate(-50%, -50%);
 }
 
 .hamburger-icon::after {
-  bottom: calc(50% - 5px);
+  bottom: calc(50% - var(--hamburger-gap));
   transform: translate(-50%, 50%);
 }
 
+/* Estado activo del hamburger */
 .menu-toggle.active .hamburger-icon {
   background: transparent;
 }
 
+.menu-toggle.active .hamburger-icon::before,
+.menu-toggle.active .hamburger-icon::after {
+  top: 50%;
+}
+
 .menu-toggle.active .hamburger-icon::before {
   transform: translate(-50%, -50%) rotate(45deg);
-  top: 50%;
 }
 
 .menu-toggle.active .hamburger-icon::after {
   transform: translate(-50%, -50%) rotate(-45deg);
   bottom: auto;
-  top: 50%;
 }
 
-/* Estilo para el botón de "Leer Documentación" */
 #leer-docu {
   margin-bottom: 1rem;
 }

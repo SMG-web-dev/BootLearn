@@ -1,0 +1,45 @@
+/* Estructura base del sidebar */
+.sidebar {
+  background-color: var(--light-color);
+  border-right: 1px solid var(--border-color);
+  overflow-y: auto;
+  z-index: 1000;
+
+  /* Configuración del scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: var(--bs-primary) transparent;
+}
+
+/* Estados de expansión/colapso */
+.sidebar.collapsed {
+  width: var(--sidebar-width-collapsed);
+}
+
+.sidebar:not(.collapsed) {
+  width: var(--sidebar-width-expanded);
+  overflow-x: hidden;
+}
+
+/* Contenedor de texto central */
+.sidebar .text-center {
+  padding: var(--sidebar-padding);
+  margin: calc(-1 * var(--sidebar-padding)) -1rem 1rem;
+  border-radius: 0 0 var(--sidebar-border-radius) var(--sidebar-border-radius);
+}
+
+.sidebar .text-center h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.sidebar .text-center p {
+  color: var(--sidebar-text-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Transición del contenido principal */
+.main-content {
+  transition: margin-left 0.3s ease;
+}

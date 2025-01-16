@@ -1,28 +1,4 @@
-/* Contenedor del código */
-.code-example {
-  position: relative;
-  margin: 1.5rem 0;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.code-example pre {
-  margin: 0;
-  overflow-x: auto;
-  position: relative;
-  border-radius: 8px;
-}
-
-.code-example code {
-  position: relative;
-  display: block;
-  padding: 1.25rem;
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-/* Wrapper del botón con posición fija */
+/* Contenedor del botón de copiar */
 .copy-button-wrapper {
   position: absolute;
   top: 0.75rem;
@@ -32,52 +8,55 @@
   pointer-events: auto;
 }
 
-/* Estilos del botón */
+/* Botón de copiar */
 .copy-button {
+  --btn-bg: var(--copy-btn-bg);
+
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
+  gap: var(--copy-btn-gap);
+  padding: var(--copy-btn-padding);
+  font-size: var(--copy-btn-font-size);
   font-weight: 500;
   color: #fff;
-  background-color: rgba(13, 110, 253, 0.9);
+  background-color: var(--btn-bg);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
+  border-radius: var(--copy-btn-radius);
   cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all var(--transition-bezier);
   backdrop-filter: blur(4px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-sm);
   white-space: nowrap;
+  position: relative;
 }
 
 /* Icono del botón */
 .copy-button::before {
   content: "";
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: var(--copy-btn-icon-size);
+  height: var(--copy-btn-icon-size);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='white'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z'%3E%3C/path%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  transition: transform 0.2s ease;
+  transition: transform var(--transition-fast);
 }
 
 /* Estados del botón */
 .copy-button:hover {
-  background-color: rgba(13, 110, 253, 1);
+  background-color: var(--copy-btn-bg-hover);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+  box-shadow: var(--shadow-lg);
 }
 
 .copy-button:active {
   transform: translateY(1px);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
 }
 
 .copy-button.copied {
-  background-color: rgba(25, 135, 84, 0.9);
+  background-color: var(--copy-btn-success);
 }
 
 .copy-button.copied::before {
@@ -86,11 +65,36 @@
 }
 
 .copy-button.error {
-  background-color: rgba(220, 53, 69, 0.9);
+  background-color: var(--copy-btn-error);
 }
 
 .copy-button.error::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='white'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 18L18 6M6 6l12 12'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* Efecto hover del botón */
+.copy-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2) 0%,
+    transparent 70%
+  );
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: transform var(--transition-normal),
+    opacity var(--transition-normal);
+  pointer-events: none;
+}
+
+.copy-button:hover::after {
+  transform: translate(-50%, -50%) scale(2);
+  opacity: 1;
 }
 
 /* Animación del checkmark */
@@ -109,31 +113,7 @@
 /* Ajustes responsivos */
 @media (max-width: 768px) {
   .copy-button {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.75rem;
+    --copy-btn-padding: 0.4rem 0.8rem;
+    --copy-btn-font-size: 0.75rem;
   }
-}
-
-/* Efecto de hover mejorado */
-.copy-button::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.2) 0%,
-    transparent 70%
-  );
-  transform: translate(-50%, -50%) scale(0);
-  opacity: 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  pointer-events: none;
-}
-
-.copy-button:hover::after {
-  transform: translate(-50%, -50%) scale(2);
-  opacity: 1;
 }

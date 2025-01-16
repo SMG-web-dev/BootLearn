@@ -1,7 +1,9 @@
-@import url("colors.css");
-@import url("scrollbars.css");
-@import url("layout.css");
-@import url("components.css");
-@import url("responsive.css");
-@import url("copyButton.css");
-@import url("footer.css");
+@import url("base/_variables.css");
+@import url("base/_scrollbars.css");
+@import url("components/_code.css");
+@import url("components/_copyBtn.css");
+@import url("components/_footer.css");
+@import url("components/_navs.css");
+@import url("components/_sidebar.css");
+@import url("components/_toggle.css");
+@import url("layout/_responsive.css");
