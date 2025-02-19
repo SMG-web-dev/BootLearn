@@ -57,7 +57,7 @@ function createFooter() {
             </div>
             <p class="text-muted small copyright">
                 <i class="bi bi-c-circle me-2"></i>
-                Copyright ${new Date().getFullYear()}. Todos los derechos reservados.
+                smg-dev ${new Date().getFullYear()}. Todos los derechos reservados.
             </p>
         </div>
     </div>
